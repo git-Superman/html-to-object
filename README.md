@@ -8,7 +8,7 @@ npm install html-to-obj -save
 ### yarn install
 
 ```cmd
-npm install html-to-obj
+yarn html-to-obj
 ```
 
 
