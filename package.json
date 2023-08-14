@@ -1,6 +1,6 @@
 {
   "name": "html-to-obj",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "html to object",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "https://github.com/git-Superman/html-to-object"
   },
-  "keywords": ["html to object"],
+  "keywords": [
+    "html to object"
+  ],
   "author": "qian2025",
   "license": "ISC",
   "dependencies": {
