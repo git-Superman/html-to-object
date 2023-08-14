@@ -60,10 +60,14 @@ const cheerio = require('cheerio');
     }
     
     
-    
+    /**
+     * @param {String} html
+     * @param {Object} parser
+     * @returns {Object}
+     * 
+     */
     function htmlToObject(html, parser) {
-        
-        console.log( html, parser )
+
         if( typeof parser !== 'object' ) throw Error('argument parser It\'s an object')
     
         const $ = cheerio.load(html || '');
