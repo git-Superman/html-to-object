@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/git-Superman/html-to-object"
+  },
+  "keywords": ["html to object"],
   "author": "qian2025",
   "license": "ISC",
   "dependencies": {
