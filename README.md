@@ -1,20 +1,20 @@
 ### npm install
 
 ```cmd
-npm install html-to-object -save
+npm install html-to-obj -save
 ```
 
 
 ### yarn install
 
 ```cmd
-npm install html-to-object
+npm install html-to-obj
 ```
 
 
 ### test
 ```js
-const hto = require('html-to-object')
+const hto = require('html-to-obj')
 const obj = hto(
     `<ul class="list" data-title="UL">
         <li data-href="li 1"><a href="a href 1">T1</a></li>
