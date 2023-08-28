@@ -40,7 +40,7 @@ function formatText(parent, parser) {
     const self = parser.target === 'self' ? parent : parent.find(parser.target);
     switch (parser.type) {
         case 'text':
-            return self.text().trim();
+            return (self.text() || '').trim();
         case 'html':
             return (self.html() || '').trim();
         case 'attr':
@@ -57,7 +57,7 @@ function formatText(parent, parser) {
  * @returns {Object}
  * 
  */
-function htmlToObject(html, parser) {
+function htmlToObject(html, parser, removeSelector) {
 
     if( typeof parser !== 'object' ) throw Error('argument parser It\'s an object')
 
@@ -65,6 +65,10 @@ function htmlToObject(html, parser) {
     const parser_match = strAllIntoObjects(parser);
     const result = {}
     
+    if( removeSelector && removeSelector.length > 0 ) {
+        $(removeSelector.join(',')).remove();
+    }
+
 
     Object.keys(parser_match).forEach(key => {
         let item = parser_match[key];
