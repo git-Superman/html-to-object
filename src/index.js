@@ -27,7 +27,15 @@ function strIntoObjects(parser) {
 function strAllIntoObjects(parser) {
     let result = {};
     Object.keys(parser).forEach(key => {
-        result[key] = strIntoObjects(parser[key]);
+        if( parser[key] ) 
+        {
+            try {
+                result[key] = strIntoObjects(parser[key]);
+            }
+            catch(e) {
+                console.error(e)
+            }
+        }
     });
 
     return result;
